@@ -2,11 +2,13 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { HashRouter } from 'react-router-dom';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+    <HashRouter>
     <>
       <div>
         <a href="https://vitejs.dev" target="_blank">
@@ -76,6 +78,7 @@ function App() {
         <div className='row-start-7 row-end-12 col-span-3 bg-sky-400'>03</div>
       </div>
     </>
+    </HashRouter>
   )
 }
 
